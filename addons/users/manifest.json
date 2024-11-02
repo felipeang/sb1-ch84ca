@@ -1,0 +1,22 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "User management addon",
+  "routes": [
+    {
+      "path": "/users",
+      "component": "views/UserList",
+      "layout": "layouts/Main"
+    },
+    {
+      "path": "/users/[id]",
+      "component": "views/UserDetail",
+      "layout": "layouts/Main"
+    }
+  ],
+  "models": [
+    "models/User",
+    "models/Profile"
+  ],
+  "dependencies": ["base"]
+}

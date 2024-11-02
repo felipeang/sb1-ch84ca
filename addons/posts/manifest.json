@@ -1,0 +1,21 @@
+{
+  "name": "posts",
+  "version": "1.0.0",
+  "description": "Post management addon",
+  "routes": [
+    {
+      "path": "/posts",
+      "component": "views/PostList",
+      "layout": "layouts/Main"
+    },
+    {
+      "path": "/posts/[id]",
+      "component": "views/PostDetail",
+      "layout": "layouts/Main"
+    }
+  ],
+  "models": [
+    "models/Post"
+  ],
+  "dependencies": ["base", "users"]
+}
